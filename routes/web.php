@@ -16,6 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/', function () {
-    return view('shoppinig_list');
+Route::get('/shopping_list', function () {
+    return view('shopping_list');
 });
