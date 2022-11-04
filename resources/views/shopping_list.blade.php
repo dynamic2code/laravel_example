@@ -36,7 +36,11 @@
                 </div>
             @endif
 
-            
+        <div class="item_raw">
+            <div id="name">{{$name}}</div>
+            <div id="price"> {{$price}}</div>
+            <div id="quantity">{{$quantity}}</div>
+        </div> 
         </div>
     </body>
 </html>

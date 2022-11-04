@@ -13,9 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/shopping_list', function () {
-    return view('shopping_list');
-});
+Route::get('/', 'Home@index');
+
+Route::get('/shopping_list', 'Item@show_items');
