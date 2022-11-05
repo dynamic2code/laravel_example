@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ItemController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,7 +14,5 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', 'Home@index');
-
-Route::get('/shopping_list', 'Item@show_items');
+Route::get('/', [HomeController::class, 'index']);
+Route::get('/shopping_list', [ItemController::class, 'show_items']);
