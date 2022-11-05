@@ -35,12 +35,13 @@
                     @endauth
                 </div>
             @endif
-
-        <div class="item_raw">
-            <div id="name">{{$name}}</div>
-            <div id="price"> {{$price}}</div>
-            <div id="quantity">{{$quantity}}</div>
-        </div> 
+        @foreach($items as $item)
+            <div class="item_raw">
+                <div id="name">{{$item->'name'}}</div>
+                <div id="price"> {{$item->'price'}}</div>
+                <div id="quantity">{{$item->'quantity'}}</div>
+            </div> 
+        @endforeach
         </div>
     </body>
 </html>
