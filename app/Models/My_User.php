@@ -5,10 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Cartmodel extends Model
+class MY_User extends Model
 {
     use HasFactory;
-    //store items to cart
-    
-    //retrive the no of items from cart
+    //store user's credential into db
 }
