@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class ItemsModel extends Model
 {
     use HasFactory;
+    //get items from db as and return them to controler
 }
