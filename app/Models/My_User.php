@@ -8,5 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class MY_User extends Model
 {
     use HasFactory;
+    protected $table = 'User'; 
     //store user's credential into db
 }
