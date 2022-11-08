@@ -8,6 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Items extends Model
 {
     use HasFactory;
-    protected $table = 'Item'; 
+    protected $table = '_item'; 
     //get items from db as and return them to controler
 }
