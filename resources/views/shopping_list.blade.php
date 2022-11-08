@@ -22,7 +22,7 @@
     </head>
     <body class="antialiased">
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-            @if (Route::has('login'))
+            <!-- @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                     @auth
                         <a href="{{ url('/home') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Home</a>
@@ -34,12 +34,16 @@
                         @endif
                     @endauth
                 </div>
-            @endif
-        @foreach($item as $item)
+            @endif -->
+        @foreach(  $items as $item)
             <div class="item_raw">
-                <div id="name"> {{$item->'name'}} </div>
-                <div id="price"> {{$item->'price'}} </div>
-                <div id="quantity">{{$item->'quantity'}} </div>
+                <div id="name"> {{$item->name}} </div>
+                <div id="price"> {{$item->price}} </div>
+                <div id="quantity">{{$item->quantity}} </div>
+                <div class="buttons">
+                    <a href="to buy controler"><div id="buy"></div> </a>
+                    <a href="to cart controler"><div id="add_to _cart"></div></a>
+                </div>
             </div> 
         @endforeach
         </div>
