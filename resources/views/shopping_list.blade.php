@@ -41,8 +41,8 @@
                 <div id="price"> {{$item->price}} </div>
                 <div id="quantity">{{$item->quantity}} </div>
                 <div class="buttons">
-                    <a href="to buy controler"><div id="buy"></div> </a>
-                    <a href="to cart controler"><div id="add_to _cart"></div></a>
+                    <a href="to buy controler"><div id="buy"></div><button></button></a>
+                    <a href="to cart controler"><div id="add_to _cart"><button></button></div></a>
                 </div>
             </div> 
         @endforeach
